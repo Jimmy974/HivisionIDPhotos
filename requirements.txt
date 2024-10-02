@@ -5,3 +5,4 @@ requests
 mtcnn-runtime
 tqdm
 starlette
+fastapi
