@@ -24,7 +24,7 @@ EXPOSE 8080
 #RUN chmod +x /app/start.sh
 #CMD ["/bin/bash", "/app/start.sh"]
 
-CMD ["python3", "-u", "app.py", "--host", "0.0.0.0", "--port", "7860"]
-#CMD ["python3", "-u", "deploy_api.py"]
+#CMD ["python3", "-u", "app.py", "--host", "0.0.0.0", "--port", "7860"]
+CMD ["python3", "-u", "deploy_api.py"]
 
 
