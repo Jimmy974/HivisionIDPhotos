@@ -20,10 +20,11 @@ RUN python scripts/download_model.py --models all
 EXPOSE 7860
 EXPOSE 8080
 
-COPY start.sh /app/start.sh
-RUN chmod +x /app/start.sh
-CMD ["/bin/bash", "/app/start.sh"]
-#CMD ["python3", "-u", "app.py", "--host", "0.0.0.0", "--port", "7860"]
+#COPY start.sh /app/start.sh
+#RUN chmod +x /app/start.sh
+#CMD ["/bin/bash", "/app/start.sh"]
+
+CMD ["python3", "-u", "app.py", "--host", "0.0.0.0", "--port", "7860"]
 #CMD ["python3", "-u", "deploy_api.py"]
 
 
